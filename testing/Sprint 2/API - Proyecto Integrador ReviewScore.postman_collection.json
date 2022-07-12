@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "e9a38c60-e9d8-4e54-a44b-34a0c3f35238",
+		"name": "API - Proyecto Integrador ReviewScore",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18077912"
+	},
+	"item": [
+		{
+			"name": "Save ReviewScores",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"product\":{\"id\":1},\n    \"user\":{\"id\":2},\n    \"score\": 5\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/reviewScores",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"reviewScores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get a reviewScores",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/reviewScores/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"reviewScores",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

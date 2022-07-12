@@ -1,0 +1,278 @@
+header {
+    text-decoration: none;
+    background: white;
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+}
+
+.header__logo {
+    padding-inline-start: 40px;
+    padding-inline-end: 40px;
+    padding-block-start: 15px;
+    padding-block-end: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.header__button {
+    color: $primary;
+    border-color: $primary;
+    border-radius: 5px;
+    background: transparent;
+    border: 1px solid $primary ;
+    padding: 6px 55px 6px 55px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 16px;
+
+    &:hover {
+        background-color: $primary;
+        color: white;
+        transition: .3s ease all
+    }
+}
+
+.header__burguer {
+    font-size: 30px;
+    position: absolute;
+    right: 5%;
+}
+
+.header__logged {
+    display: flex;
+}
+
+.header__adm {
+    display: flex;
+    align-items: flex-end;
+    padding-inline-end: 20px;
+}
+
+.header__adm-title {
+    padding-inline-end: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.header__logged-initial {
+    background-color: $dark-grey;
+    border-radius: 50%;
+    padding: 7px;
+    color: white;
+
+    cursor: pointer;
+}
+
+.header__logged-greetings,
+ul {
+    margin-left: 6px;
+    margin-right: 6px;
+    list-style: none;
+    padding: 0px;
+
+
+    li:nth-child(even) {
+        cursor: pointer;
+    }
+
+    li:nth-child(even)>ul {
+        display: none;
+    }
+
+    li:nth-child(even):hover>ul {
+        display: block;
+    }
+
+    li:nth-child(even)>ul {
+        display: none;
+    }
+
+    li:nth-child(even):hover>ul {
+        display: block;
+    }
+}
+
+.header__name {
+    color: $primary;
+}
+
+.header__hello {
+    font-weight: bold;
+}
+
+.header__name {
+    color: $primary;
+    font-weight: bold;
+}
+
+.links {
+    font-weight: lighter;
+    text-decoration: none;
+    color: black;
+}
+
+.header__faXmark {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+
+.header__exit,
+.header__menu,
+.header__option,
+.header__line {
+    display: none;
+}
+
+.header__mis-reservas {
+    display: none;
+    transition: all .5s;
+}
+
+
+@media screen and (max-width :768px) {
+
+    .header__button {
+        padding: 6px 20px 6px 20px;
+        font-size: 20px;
+    }
+
+}
+
+
+@media screen and (max-width :480px) {
+
+    .header__button {
+        display: none;
+        text-align: center;
+        color: $dark;
+        border-color: transparent;
+        border-radius: 5px;
+        border: 1px solid transparent;
+        padding: 20px 20px 10px;
+        padding-block-end: 5px;
+
+        &:hover {
+            background-color: $light-grey;
+        }
+    }
+
+    .header__logged {
+        display: none;
+    }
+
+    .header__logged-x {
+        color: $primary;
+    }
+
+    .header__nav {
+        flex-flow: column nowrap;
+        background-color: #DFE4EA;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 300px;
+        transition: transform 0.3s ease-in-out;
+
+        .header__exit,
+        .header__menu,
+        .header__button,
+        .header__line,
+        .header__option,
+        .header__logged {
+            display: block;
+
+        }
+
+        .header__exit {
+            background-color: $primary;
+            color: $light-grey;
+            font-size: 30px;
+            padding: 15px 15px 10px;
+        }
+
+        .header__menu {
+            color: $light-grey;
+            background-color: $primary;
+            padding: 150px 15px 10px;
+        }
+
+        .header__button {
+            text-align: center;
+            color: $dark;
+            border-color: transparent;
+            border-radius: 5px;
+            border: 1px solid transparent;
+            padding: 20px 20px 10px;
+            padding-block-end: 5px;
+
+            &:hover {
+                background-color: $light-grey;
+            }
+        }
+
+        .header__option {
+            position: absolute;
+            bottom: 10px;
+            display: flex;
+            color: $dark;
+            font-size: 25px;
+            padding-block-start: 520px;
+        }
+
+        .header__icon {
+
+            margin-left: 15px;
+        }
+
+        .header__logged {
+            background-color: $primary;
+            padding: 80px 15px 10px;
+            flex-direction: column;
+        }
+
+        .header__logged-initial {
+            border-radius: 50%;
+            width: 44px;
+        }
+
+        .header__logged-greetings {
+            padding-block-start: 6px;
+
+            li {
+                font-size: 16px;
+            }
+
+            li:nth-child(even) {
+                color: $dark;
+            }
+
+            li:nth-child(odd) {
+                color: $light-grey;
+
+            }
+        }
+
+        .header__logged-x {
+            color: $light-grey;
+        }
+
+        .header__adm-title {
+            position: absolute;
+            top: 50px;
+            right: 5px;
+            font-weight: normal;
+        }
+
+
+
+    }
+
+}

@@ -1,0 +1,80 @@
+{
+	"info": {
+		"_postman_id": "69ab7558-d75a-4513-baf7-7a4ba3443dec",
+		"name": "API - Proyecto Integrador Feature",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18077912"
+	},
+	"item": [
+		{
+			"name": "Save Feature",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"wifi\",\n    \"iconUrl\": \"someUrl\",\n    \"type\":\"wifi\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/features",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"features"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all feature",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/features",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"features"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save All Features",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"id\": 1,\n        \"title\": \"Wifi\",\n        \"iconUrl\": \"someUrl\",\n        \"type\": \"wifi\"\n    },\n    {\n        \"id\": 2,\n        \"title\": \"Pool\",\n        \"iconUrl\": \"someUrl\",\n        \"type\": \"pool\"\n    },\n    {\n        \"id\": 3,\n        \"title\": \"Kitchen\",\n        \"iconUrl\": \"someUrl\",\n        \"type\": \"kitchen\"\n    },\n    {\n        \"id\": 4,\n        \"title\": \"Tv\",\n        \"iconUrl\": \"someUrl\",\n        \"type\": \"tv\"\n    },\n    {\n        \"id\": 5,\n        \"title\": \"Pet\",\n        \"iconUrl\": \"someUrl\",\n        \"type\": \"pet\"\n    },\n    {\n        \"id\": 6,\n        \"title\": \"AC\",\n        \"iconUrl\": \"someUrl\",\n        \"type\": \"ac\"\n    },\n    {\n        \"id\": 7,\n        \"title\": \"Parking\",\n        \"iconUrl\": \"someUrl\",\n        \"type\": \"parking\"\n    },\n    {\n        \"id\": 8,\n        \"title\": \"Smoke\",\n        \"iconUrl\": \"someUrl\",\n        \"type\": \"smoke\"\n    },\n    {\n        \"id\": 9,\n        \"title\": \"Creaditcard\",\n        \"iconUrl\": \"someUrl\",\n        \"type\": \"creaditcard\"\n    },\n    {\n        \"id\": 10,\n        \"title\": \"Housekeeping\",\n        \"iconUrl\": \"someUrl\",\n        \"type\": \"housekeeping\"\n    },\n    {\n        \"id\": 11,\n        \"title\": \"Roomservice\",\n        \"iconUrl\": \"someUrl\",\n        \"type\": \"roomservice\"\n    },\n    {\n        \"id\": 12,\n        \"title\": \"Transfer\",\n        \"iconUrl\": \"someUrl\",\n        \"type\": \"transfer\"\n    },\n    {\n        \"id\": 13,\n        \"title\": \"Laundry\",\n        \"iconUrl\": \"someUrl\",\n        \"type\": \"laundry\"\n    },\n    {\n        \"id\": 14,\n        \"title\": \"Breakfast\",\n        \"iconUrl\": \"someUrl\",\n        \"type\": \"breakfast\"\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/features/saveAll",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"features",
+						"saveAll"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

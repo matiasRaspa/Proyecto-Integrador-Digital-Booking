@@ -1,0 +1,296 @@
+.booking_form{
+    background-color: #dfe4ea;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.booking_horarios_llegada{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    width: 888px;
+    height: 144px;
+    border-radius: 5px;
+}
+
+.booking_h4_text{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.booking_horarios_label{
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.booking_horarios_option{
+    width: 388px;
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(3, 3, 3, 0.30);
+    font-size: 17px;
+    font-weight: 600;
+    color: rgb(77, 74, 74);
+    cursor: pointer;
+    border-color: white;
+    outline: none;
+    border: none;
+}
+
+.booking_datos_usuario{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    width: 888px;
+    height: 217px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.booking_datos_usuario_label{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.booking_datos_usuario_input{
+    width: 388px;
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(3, 3, 3, 0.30);
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(77, 74, 74);
+    cursor: pointer;
+    border-color: white;
+    outline: none;
+    border: none;
+}
+
+.booking_resumen{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    width: 700px;
+    height: 790px;
+    border-radius: 5px;
+    margin-right: 100px;
+    margin-top: 28px;
+}
+
+.booking_form_1{
+    margin-left: 50px;
+    margin-top: -50px;
+}
+
+.booking_resumen_titulo{
+    color: rgb(77, 74, 74);
+}
+
+.booking_resumen_nombre{
+    font-size: 20px;
+    color: rgb(56, 55, 55);
+    margin-bottom: 10px;
+}
+
+.booking_fechas{
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+.product_btn_form{
+    background-color: #F0572D;
+    border: none;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 15px;
+    box-shadow: 0px 0px 5px rgba(68, 68, 68, 0.5);
+    border-radius: 5px;
+    width: 360px;
+    height: 50px;
+}
+
+.product_btn_form:hover{
+    color:#F0572D;
+    background-color: white;
+    transition: .3s ease all;
+    border: 0.25px solid #F0572D;
+}
+
+.booking_separador{
+    border: 1px solid #F0572D;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.booking_div_btn_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.booking_div_resumen_horarios{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.booking_resumen_imagen{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 400px;
+}
+
+.booking_description{
+    margin-left: 25px;
+}
+
+.booking_resumen_stars{
+    margin-bottom: 10px;
+}
+
+.booking_resumen_location{
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.booking_resumen_h2_padding{
+    margin-left: 10px;
+}
+
+@media (max-width :1700px){
+
+    .booking_seccion_calendar_container{
+        margin-left: -70px;
+    }
+    
+    .booking_horarios_llegada{
+        margin-left: -70px;
+    }
+    
+    .booking_datos_usuario{
+        margin-left: -70px;
+    }
+
+    .booking_resumen{
+        margin-right: -10px;
+        width: 550px;
+        margin-right: 50px;
+    }
+
+}
+
+@media (max-width :768px){
+
+    .booking_form{
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .booking_form_2{
+        margin-bottom: 30px;
+        margin-left: 80px;
+    }
+
+    .booking_horarios_llegada{
+        width: 700px;
+        margin-left: -9px;
+        margin-bottom: 20px;
+    }
+    
+    .booking_datos_usuario{
+        width: 700px;
+        margin-left: -9px;
+    }
+    
+    .booking_datos_usuario_input{
+        width: 260px;
+    }
+
+    .booking_resumen{
+        width: 700px;
+        margin-left: -40px;
+    }
+
+    .booking_seccion_calendar_container{
+        margin-left: -10px;
+    }
+    
+    .booking_fechas{
+        padding-top: 60px;
+    }
+}
+
+@media screen and (max-width :480px){
+
+    .booking_form{
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .booking_form_2{
+        margin-bottom: 30px;
+        margin-left: 80px;
+    }
+
+    .booking_horarios_llegada{
+        width: 382px;
+        height: 160px;
+        margin-left: -32px;
+        margin-bottom: 20px;
+    }
+
+    .booking_horarios_option{
+        width: 280px;
+    }
+
+    .booking_datos_usuario{
+        grid-template-columns: 1fr;
+        width: 380px;
+        height: 383px;
+        margin-left: -33px;
+        padding-left: 20px;
+    }
+
+    .booking_calendar_container{
+        margin-left: -16px;
+    }
+
+    .booking_resumen{
+        width: 380px;
+        margin-left: -63px;
+    }
+
+    .booking_seccion_calendar_container{
+        margin-left: 10px;
+    }
+
+}

@@ -1,0 +1,368 @@
+{
+	"info": {
+		"_postman_id": "c0424fe7-0c6f-4226-b039-bab02430ab15",
+		"name": "API- Proyecto Integrador Category",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18077912"
+	},
+	"item": [
+		{
+			"name": "Get All Categories",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/categories/",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"categories",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Category by Id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/categories/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"categories",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save  New Category",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {",
+							"    pm.response.to.have.status(201);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Departamentos\",\n    \"description\": \"Los mejores departamentos de la zona\",\n    \"imageUrl\": \"https://bucket-grupo6-c1.s3.us-east-2.amazonaws.com/img/imgcategory/departamentos.jpeg\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/categories",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Category",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Cabañas\",\n    \"description\": \"3\",\n    \"imageUrl\": \"https://bucket-grupo6-c1.s3.us-east-2.amazonaws.com/img/photo-1542718610-a1d656d1884c.jpeg\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://pruebaapigrupo6-env.eba-nhxismav.us-east-2.elasticbeanstalk.com/categories/1",
+					"protocol": "http",
+					"host": [
+						"pruebaapigrupo6-env",
+						"eba-nhxismav",
+						"us-east-2",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"categories",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update category that does not exist",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(404);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Categoria 2\",\n    \"description\": \"Descripcion de la categoria 2\",\n    \"imageUrl\": \"urldeimagendeperritos\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/categories/45",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"categories",
+						"45"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get ; URL that does not exist",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {",
+							"    pm.response.to.have.status(404);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/category",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Category by Id ; Id does not exist",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(404);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/categories/10000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"categories",
+						"10000"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete category that does not exist",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(404);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/categories/10000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"categories",
+						"10000"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete category ",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://pruebaapigrupo6-env.eba-nhxismav.us-east-2.elasticbeanstalk.com/categories/4",
+					"protocol": "http",
+					"host": [
+						"pruebaapigrupo6-env",
+						"eba-nhxismav",
+						"us-east-2",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"categories",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save all categories",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"id\": 1,\n        \"title\": \"Hoteles\",\n        \"description\": \"Los mejores hoteles de la zona\",\n        \"productsCount\": 2,\n        \"imageUrl\": \"https://bucket-grupo6-c1.s3.us-east-2.amazonaws.com/img/imgcategory/hotel.jpeg\"\n    },\n    {\n        \"id\": 2,\n        \"title\": \"Departamentos\",\n        \"description\": \"Los mejores departamentos de la zona\",\n        \"productsCount\": 0,\n        \"imageUrl\": \"https://bucket-grupo6-c1.s3.us-east-2.amazonaws.com/img/imgcategory/departamentos.jpeg\"\n    },\n    {\n        \"id\": 3,\n        \"title\": \"Cabañas\",\n        \"description\": \"Increibles cabañas para disfrutar\",\n        \"productsCount\": 1,\n        \"imageUrl\": \"https://bucket-grupo6-c1.s3.us-east-2.amazonaws.com/img/imgcategory/caba%C3%B1a.jpeg\"\n    },\n    {\n        \"id\": 4,\n        \"title\": \"Glamping\",\n        \"description\": \"Conoce la ultima moda en hospedaje\",\n        \"productsCount\": 0,\n        \"imageUrl\": \"https://bucket-grupo6-c1.s3.us-east-2.amazonaws.com/img/imgcategory/glamping.jpeg\"\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/categories/saveAll",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"categories",
+						"saveAll"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

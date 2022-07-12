@@ -1,0 +1,37 @@
+.myBookings__container {
+    background-color: $light-grey;
+    width: 100%;
+    height: 100vh;
+}
+
+.myBookings__reserveoff {
+    padding-block-start: 15%;
+    height: 100vh;
+    text-align: center;
+}
+
+.myBookings__boniculars {
+    font-size: 150px;
+    color: $dark;
+}
+
+.myBookings__to-home {
+    color: $primary;
+}
+
+
+
+@media screen and (max-width :768px) {
+
+    .myBookings__reserveoff {
+        padding-block-start: 40%;
+    }
+
+}
+
+@media screen and (max-width :480px) {
+
+    .myBookings__reserveoff {
+        padding-block-start: 40%
+    }
+}

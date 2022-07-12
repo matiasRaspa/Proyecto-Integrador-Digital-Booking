@@ -1,0 +1,26 @@
+@import './base/settings';
+@import './base/base';
+
+// components
+
+@import './components/header';
+@import './components/search';
+@import './components/body';
+@import './components/login';
+@import './components/register';
+@import './components/alert';
+@import './components/createProduct';
+@import './components/loadImages';
+@import './components/previewImages';
+@import './components/productGallery';
+@import './components/carousel';
+@import './components/productImagesSlider';
+@import './components/tabletCarousel';
+@import './components/success';
+@import './components/successRegister';
+@import './components/viewMap';
+@import './components/product';
+@import './components/paginate';
+@import './components/myBookings';
+@import './components/like';
+@import './components/footer';

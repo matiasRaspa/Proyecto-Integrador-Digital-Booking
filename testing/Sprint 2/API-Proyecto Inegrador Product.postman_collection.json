@@ -1,0 +1,400 @@
+{
+	"info": {
+		"_postman_id": "27ff5ad4-3217-4f34-9622-ca9afadfd285",
+		"name": "API-Proyecto Inegrador Product",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18077912"
+	},
+	"item": [
+		{
+			"name": "Save  New Product",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(201);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Arenas Blancas Cabañas & Suites\",\n    \"description\": \"El Arenas Blancas Cabañas & Suites se encuentra en Nono y ofrece pileta al aire libre, wifi gratis y estacionamiento privado gratuito.Los alojamientos disponen de patio, aire acondicionado, TV de pantalla plana y baño privado con bidet y secador de pelo.\",\n    \"category\": {\n        \"id\": 3\n    },\n    \"location\": {\n        \"id\": 24\n    },\n    \"features\": [\n        {\n            \"id\": 1\n        },\n        {\n            \"id\": 4\n        },\n        {\n            \"id\": 7\n        },\n        {\n            \"id\": 9\n        }\n    ],\n    \"images\": [\n        {\n            \"title\": \"main\",\n            \"url\": \"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/282588168.jpg?k=5658e883814fa9d1e7d91243368240a79d4066fe4d76496ff2781de0d20356b5&o=&hp=1\"\n        },\n        {\n            \"title\": \"pool\",\n            \"url\": \"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/282588154.jpg?k=f1ab0e67b8d9e6f8e2cd0705a75813740ee3edca7cb41e6f16594d8aaefbb98b&o=&hp=1\"\n        },\n        {\n            \"title\": \"pool2\",\n            \"url\": \"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/174912753.jpg?k=8563c2c210c24a6252b5f9b897b1b779f368c4b18bb43a23ce768fe05d4b6731&o=&hp=1\"\n        },\n        {\n            \"title\": \"rooms\",\n            \"url\": \"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/203354618.jpg?k=db446445ee538b2ba9ed28b3314203fb479229aeb3e56dc3935d50cc7b40e72c&o=&hp=1\"\n        },\n        {\n            \"title\": \"apartments\",\n            \"url\": \"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/177127902.jpg?k=07575da7501ab84d523c8daf18f896edf7057679a79a862132147f9f1894f82e&o=&hp=1\"\n        }\n    ],\n    \"politics\": [\n        {\n            \"id\": 1\n        },\n        {\n            \"id\": 2\n        },\n        {\n            \"id\": 3\n        },\n        {\n            \"id\": 4\n        },\n        {\n            \"id\": 5\n        },\n        {\n            \"id\": 6\n        }\n    ],\n    \"score\": 4.0,\n    \"latitude\": \"-31.776738085761583\",\n    \"longitude\": \"-65.00108183223747\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/products/",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"products",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All products",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Home",
+						"value": "true",
+						"type": "text"
+					},
+					{
+						"key": "page",
+						"value": "1",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "size",
+						"value": "5",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{URL}}/products/?page=0&size=8",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"products",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "size",
+							"value": "8"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Product",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 1,\n    \"name\": \"hotelucho\",\n    \"description\": \"Descripcion del hotelucho 2\",\n    \"score\": 3.2,\n    \"latitude\": \"latitud\",\n    \"longitude\": \"Longitud\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/products/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get a product",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/products/2",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"products",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete product ",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/products/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete product that does not exist",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {",
+							"    pm.response.to.have.status(404);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/products/10000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products",
+						"10000"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get a product that does not exist",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {",
+							"    pm.response.to.have.status(404);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/products/10000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products",
+						"10000"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Product that does not exist",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {",
+							"    pm.response.to.have.status(404);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 1,\n    \"name\": \"hotelucho\",\n    \"description\": \"Descripcion del hotelucho 2\",\n    \"score\": 3.2,\n    \"latitude\": \"latitud\",\n    \"longitude\": \"Longitud\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/products/1000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products",
+						"1000"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All products Empy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 204\", function () {",
+							"    pm.response.to.have.status(204);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get product by location name",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{URL}}/products/location=Nono",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"products",
+						"location=Nono"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get product by location id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/products/locationId=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products",
+						"locationId=1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,110 @@
+.search {
+    padding-block-start: 22px;
+    padding-block-end: 26px;
+    background-color: $dark-grey;
+    color: white;
+    text-align: center;
+    position: sticky;
+    z-index: 999;
+    top: 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.search__form {
+    margin-block-start: 23px;
+    display: flex;
+    align-items: center;
+
+}
+
+.react-datepicker__input-container {
+    width: 422px;
+
+}
+
+.search__input {
+    outline: none;
+    border: 1px solid $dark-grey ;
+    border-radius: 5px;
+    height: 40px;
+    font-size: 16px;
+    width: 422px;
+    margin-inline-start: 20px;
+    margin-inline-end: 20px;
+    padding-inline-start: 10px;
+
+
+}
+
+.search__btn {
+    color: white;
+    background: $primary;
+    border-radius: 5px;
+    border-color: $primary;
+    border: 1px solid $primary ;
+    padding: 6px 55px 6px 55px;
+    text-align: center;
+    cursor: pointer;
+    height: 40px;
+    font-size: 16px;
+
+    &:hover {
+        transform: scale(1.02);
+    }
+
+}
+
+@media screen and (max-width :768px) {
+
+    .search__select,
+    .search__input {
+        font-size: 20px;
+        width: 250px;
+    }
+
+    .react-datepicker__input-container {
+        width: 250px;
+    }
+
+
+    .search__option {
+        font-size: 10px;
+    }
+
+    .search__btn {
+        padding: 6px 20px 6px 20px;
+        font-size: 20px;
+    }
+
+
+}
+
+@media screen and (max-width :480px) {
+    .search {
+        text-align: center;
+        position: static;
+    }
+
+    .search__form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .search__input,
+    .search__select,
+    .search__btn {
+        font-size: smaller;
+        text-align: center;
+        margin: 2% auto;
+        width: 90%;
+        font-size: 16px;
+
+    }
+
+    .search__btn {
+        padding: 10px 170px 10px 170px;
+    }
+}

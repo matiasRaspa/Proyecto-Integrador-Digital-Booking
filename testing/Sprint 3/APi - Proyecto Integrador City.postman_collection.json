@@ -1,0 +1,98 @@
+{
+	"info": {
+		"_postman_id": "b9396728-aade-438f-93cf-16aca3e3c186",
+		"name": "APi - Proyecto Integrador City",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18077912"
+	},
+	"item": [
+		{
+			"name": "Save City",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Tupungato\",\n    \"state\": {\n        \"id\": 10\n    }\n    \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/cities",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"cities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all cities",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/cities",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"cities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save all Cities",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"id\": 1,\n        \"name\": \"Medellin\",\n        \"state\": {\n            \"id\": 1,\n            \"name\": \"Antioquia\",\n            \"country\": {\n                \"id\": 2,\n                \"name\": \"Colombia\"\n            }\n        },\n        \"fullName\": \"Medellin, Antioquia, Colombia\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Cali\",\n        \"state\": {\n            \"id\": 3,\n            \"name\": \"Valle del Cauca\",\n            \"country\": {\n                \"id\": 2,\n                \"name\": \"Colombia\"\n            }\n        },\n        \"fullName\": \"Cali, Valle del Cauca, Colombia\"\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Artigas\",\n        \"state\": {\n            \"id\": 2,\n            \"name\": \"Artigas\",\n            \"country\": {\n                \"id\": 1,\n                \"name\": \"Uruguay\"\n            }\n        },\n        \"fullName\": \"Artigas, Artigas, Uruguay\"\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Bogotá\",\n        \"state\": {\n            \"id\": 6,\n            \"name\": \"Cundinamarca\",\n            \"country\": {\n                \"id\": 2,\n                \"name\": \"Colombia\"\n            }\n        },\n        \"fullName\": \"Bogotá, Cundinamarca, Colombia\"\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Bella Unión\",\n        \"state\": {\n            \"id\": 2,\n            \"name\": \"Artigas\",\n            \"country\": {\n                \"id\": 1,\n                \"name\": \"Uruguay\"\n            }\n        },\n        \"fullName\": \"Bella Unión, Artigas, Uruguay\"\n    },\n    {\n        \"id\": 6,\n        \"name\": \"Sequeira\",\n        \"state\": {\n            \"id\": 2,\n            \"name\": \"Artigas\",\n            \"country\": {\n                \"id\": 1,\n                \"name\": \"Uruguay\"\n            }\n        },\n        \"fullName\": \"Sequeira, Artigas, Uruguay\"\n    },\n    {\n        \"id\": 7,\n        \"name\": \"Santa Fe de Antioquia\",\n        \"state\": {\n            \"id\": 1,\n            \"name\": \"Antioquia\",\n            \"country\": {\n                \"id\": 2,\n                \"name\": \"Colombia\"\n            }\n        },\n        \"fullName\": \"Santa Fe de Antioquia, Antioquia, Colombia\"\n    },\n    {\n        \"id\": 8,\n        \"name\": \"Montevideo\",\n        \"state\": {\n            \"id\": 4,\n            \"name\": \"Montevideo\",\n            \"country\": {\n                \"id\": 1,\n                \"name\": \"Uruguay\"\n            }\n        },\n        \"fullName\": \"Montevideo, Montevideo, Uruguay\"\n    },\n    {\n        \"id\": 9,\n        \"name\": \"Rionegro\",\n        \"state\": {\n            \"id\": 1,\n            \"name\": \"Antioquia\",\n            \"country\": {\n                \"id\": 2,\n                \"name\": \"Colombia\"\n            }\n        },\n        \"fullName\": \"Rionegro, Antioquia, Colombia\"\n    },\n    {\n        \"id\": 10,\n        \"name\": \"Pajas Blancas\",\n        \"state\": {\n            \"id\": 4,\n            \"name\": \"Montevideo\",\n            \"country\": {\n                \"id\": 1,\n                \"name\": \"Uruguay\"\n            }\n        },\n        \"fullName\": \"Pajas Blancas, Montevideo, Uruguay\"\n    },\n    {\n        \"id\": 11,\n        \"name\": \"Abayubá\",\n        \"state\": {\n            \"id\": 4,\n            \"name\": \"Montevideo\",\n            \"country\": {\n                \"id\": 1,\n                \"name\": \"Uruguay\"\n            }\n        },\n        \"fullName\": \"Abayubá, Montevideo, Uruguay\"\n    },\n    {\n        \"id\": 12,\n        \"name\": \"José Ignacio\",\n        \"state\": {\n            \"id\": 5,\n            \"name\": \"Maldonado\",\n            \"country\": {\n                \"id\": 1,\n                \"name\": \"Uruguay\"\n            }\n        },\n        \"fullName\": \"José Ignacio, Maldonado, Uruguay\"\n    },\n    {\n        \"id\": 13,\n        \"name\": \"La Barra\",\n        \"state\": {\n            \"id\": 5,\n            \"name\": \"Maldonado\",\n            \"country\": {\n                \"id\": 1,\n                \"name\": \"Uruguay\"\n            }\n        },\n        \"fullName\": \"La Barra, Maldonado, Uruguay\"\n    },\n    {\n        \"id\": 14,\n        \"name\": \"Maldonado\",\n        \"state\": {\n            \"id\": 5,\n            \"name\": \"Maldonado\",\n            \"country\": {\n                \"id\": 1,\n                \"name\": \"Uruguay\"\n            }\n        },\n        \"fullName\": \"Maldonado, Maldonado, Uruguay\"\n    },\n    {\n        \"id\": 15,\n        \"name\": \"Cartago\",\n        \"state\": {\n            \"id\": 3,\n            \"name\": \"Valle del Cauca\",\n            \"country\": {\n                \"id\": 2,\n                \"name\": \"Colombia\"\n            }\n        },\n        \"fullName\": \"Cartago, Valle del Cauca, Colombia\"\n    },\n    {\n        \"id\": 16,\n        \"name\": \"San Pedro\",\n        \"state\": {\n            \"id\": 3,\n            \"name\": \"Valle del Cauca\",\n            \"country\": {\n                \"id\": 2,\n                \"name\": \"Colombia\"\n            }\n        },\n        \"fullName\": \"San Pedro, Valle del Cauca, Colombia\"\n    },\n    {\n        \"id\": 17,\n        \"name\": \"La plata\",\n        \"state\": {\n            \"id\": 7,\n            \"name\": \"Buenos Aires\",\n            \"country\": {\n                \"id\": 3,\n                \"name\": \"Argentina\"\n            }\n        },\n        \"fullName\": \"La plata, Buenos Aires, Argentina\"\n    },\n    {\n        \"id\": 18,\n        \"name\": \"Azul\",\n        \"state\": {\n            \"id\": 7,\n            \"name\": \"Buenos Aires\",\n            \"country\": {\n                \"id\": 3,\n                \"name\": \"Argentina\"\n            }\n        },\n        \"fullName\": \"Azul, Buenos Aires, Argentina\"\n    },\n    {\n        \"id\": 19,\n        \"name\": \"Buenos Aires\",\n        \"state\": {\n            \"id\": 7,\n            \"name\": \"Buenos Aires\",\n            \"country\": {\n                \"id\": 3,\n                \"name\": \"Argentina\"\n            }\n        },\n        \"fullName\": \"Buenos Aires, Buenos Aires, Argentina\"\n    },\n    {\n        \"id\": 20,\n        \"name\": \"Junín\",\n        \"state\": {\n            \"id\": 6,\n            \"name\": \"Cundinamarca\",\n            \"country\": {\n                \"id\": 2,\n                \"name\": \"Colombia\"\n            }\n        },\n        \"fullName\": \"Junín, Cundinamarca, Colombia\"\n    },\n    {\n        \"id\": 21,\n        \"name\": \"Medina\",\n        \"state\": {\n            \"id\": 6,\n            \"name\": \"Cundinamarca\",\n            \"country\": {\n                \"id\": 2,\n                \"name\": \"Colombia\"\n            }\n        },\n        \"fullName\": \"Medina, Cundinamarca, Colombia\"\n    },\n    {\n        \"id\": 22,\n        \"name\": \"Córdoba\",\n        \"state\": {\n            \"id\": 9,\n            \"name\": \"Cordoba\",\n            \"country\": {\n                \"id\": 3,\n                \"name\": \"Argentina\"\n            }\n        },\n        \"fullName\": \"Córdoba, Cordoba, Argentina\"\n    },\n    {\n        \"id\": 23,\n        \"name\": \"Villa Carlos Paz\",\n        \"state\": {\n            \"id\": 9,\n            \"name\": \"Cordoba\",\n            \"country\": {\n                \"id\": 3,\n                \"name\": \"Argentina\"\n            }\n        },\n        \"fullName\": \"Villa Carlos Paz, Cordoba, Argentina\"\n    },\n    {\n        \"id\": 24,\n        \"name\": \"Nono\",\n        \"state\": {\n            \"id\": 9,\n            \"name\": \"Cordoba\",\n            \"country\": {\n                \"id\": 3,\n                \"name\": \"Argentina\"\n            }\n        },\n        \"fullName\": \"Nono, Cordoba, Argentina\"\n    },\n    {\n        \"id\": 25,\n        \"name\": \"Mendoza\",\n        \"state\": {\n            \"id\": 10,\n            \"name\": \"Mendoza\",\n            \"country\": {\n                \"id\": 3,\n                \"name\": \"Argentina\"\n            }\n        },\n        \"fullName\": \"Mendoza, Mendoza, Argentina\"\n    },\n    {\n        \"id\": 26,\n        \"name\": \"Salta\",\n        \"state\": {\n            \"id\": 8,\n            \"name\": \"Salta\",\n            \"country\": {\n                \"id\": 3,\n                \"name\": \"Argentina\"\n            }\n        },\n        \"fullName\": \"Salta, Salta, Argentina\"\n    },\n    {\n        \"id\": 27,\n        \"name\": \"Uspallata\",\n        \"state\": {\n            \"id\": 10,\n            \"name\": \"Mendoza\",\n            \"country\": {\n                \"id\": 3,\n                \"name\": \"Argentina\"\n            }\n        },\n        \"fullName\": \"Uspallata, Mendoza, Argentina\"\n    },\n    {\n        \"id\": 28,\n        \"name\": \"Cafayate\",\n        \"state\": {\n            \"id\": 8,\n            \"name\": \"Salta\",\n            \"country\": {\n                \"id\": 3,\n                \"name\": \"Argentina\"\n            }\n        },\n        \"fullName\": \"Cafayate, Salta, Argentina\"\n    },\n    {\n        \"id\": 29,\n        \"name\": \"Cachi\",\n        \"state\": {\n            \"id\": 8,\n            \"name\": \"Salta\",\n            \"country\": {\n                \"id\": 3,\n                \"name\": \"Argentina\"\n            }\n        },\n        \"fullName\": \"Cachi, Salta, Argentina\"\n    },\n    {\n        \"id\": 30,\n        \"name\": \"Tupungato\",\n        \"state\": {\n            \"id\": 10,\n            \"name\": \"Mendoza\",\n            \"country\": {\n                \"id\": 3,\n                \"name\": \"Argentina\"\n            }\n        },\n        \"fullName\": \"Tupungato, Mendoza, Argentina\"\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/cities/saveAll",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"cities",
+						"saveAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get a city",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/cities/1",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"cities",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

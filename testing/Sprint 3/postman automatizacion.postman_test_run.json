@@ -1,0 +1,328 @@
+{
+	"id": "f6d4d5c8-3ab7-41a8-a837-a97c205e8069",
+	"name": "postman automatizacion",
+	"timestamp": "2022-06-08T16:10:34.502Z",
+	"collection_id": "18029143-b3c505db-58ec-472f-8e86-c173a2db9d0f",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 10,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "bcb2711b-8d56-49d9-a149-825a4b61f2af",
+			"name": "Get All Categories Copy",
+			"url": "http://pruebaapigrupo6-env.eba-nhxismav.us-east-2.elasticbeanstalk.com/categories/",
+			"time": 992,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				992
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "ae34a00f-7571-4c57-9677-c0e715e3e666",
+			"name": "get all Image Copy",
+			"url": "http://pruebaapigrupo6-env.eba-nhxismav.us-east-2.elasticbeanstalk.com/images",
+			"time": 1188,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1188
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "5daeeffb-0037-45d4-aed2-f7290ab5cfa9",
+			"name": "get a Image Copy",
+			"url": "http://pruebaapigrupo6-env.eba-nhxismav.us-east-2.elasticbeanstalk.com/images",
+			"time": 643,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				643
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "1843b730-8bae-4876-ae4a-104529339fb1",
+			"name": "Get All Categories Copy",
+			"url": "http://pruebaapigrupo6-env.eba-nhxismav.us-east-2.elasticbeanstalk.com/categories",
+			"time": 726,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				726
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "5367f19d-24c7-46e7-9464-491c82dd19b1",
+			"name": "Get a reviewScore Copy",
+			"url": "http://pruebaapigrupo6-env.eba-nhxismav.us-east-2.elasticbeanstalk.com/reviewScores",
+			"time": 434,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				434
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "52805014-6257-47f1-a957-057b3c3a60ae",
+			"name": "get all countries Copy",
+			"url": "http://pruebaapigrupo6-env.eba-nhxismav.us-east-2.elasticbeanstalk.com/countries",
+			"time": 318,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				318
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "3eb158c5-bc33-4e46-be0f-7cd198c6b389",
+			"name": "get all cities Copy",
+			"url": "http://pruebaapigrupo6-env.eba-nhxismav.us-east-2.elasticbeanstalk.com/cities",
+			"time": 217,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				217
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "9bb51ed2-cc90-4069-bd9c-230b968892a2",
+			"name": "Get a state Copy",
+			"url": "http://pruebaapigrupo6-env.eba-nhxismav.us-east-2.elasticbeanstalk.com/states",
+			"time": 219,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				219
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "2dcf591c-5798-4114-86e4-53b13bebbc34",
+			"name": "get all politic Copy",
+			"url": "http://pruebaapigrupo6-env.eba-nhxismav.us-east-2.elasticbeanstalk.com/politics",
+			"time": 210,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				210
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "1e8aa23c-d817-4fa8-8117-9efb588e6cab",
+			"name": "get all feature Copy",
+			"url": "http://pruebaapigrupo6-env.eba-nhxismav.us-east-2.elasticbeanstalk.com/features",
+			"time": 216,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				216
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 5163,
+	"collection": {
+		"requests": [
+			{
+				"id": "bcb2711b-8d56-49d9-a149-825a4b61f2af",
+				"method": "GET"
+			},
+			{
+				"id": "ae34a00f-7571-4c57-9677-c0e715e3e666",
+				"method": "GET"
+			},
+			{
+				"id": "5daeeffb-0037-45d4-aed2-f7290ab5cfa9",
+				"method": "GET"
+			},
+			{
+				"id": "1843b730-8bae-4876-ae4a-104529339fb1",
+				"method": "GET"
+			},
+			{
+				"id": "5367f19d-24c7-46e7-9464-491c82dd19b1",
+				"method": "GET"
+			},
+			{
+				"id": "52805014-6257-47f1-a957-057b3c3a60ae",
+				"method": "GET"
+			},
+			{
+				"id": "3eb158c5-bc33-4e46-be0f-7cd198c6b389",
+				"method": "GET"
+			},
+			{
+				"id": "9bb51ed2-cc90-4069-bd9c-230b968892a2",
+				"method": "GET"
+			},
+			{
+				"id": "2dcf591c-5798-4114-86e4-53b13bebbc34",
+				"method": "GET"
+			},
+			{
+				"id": "1e8aa23c-d817-4fa8-8117-9efb588e6cab",
+				"method": "GET"
+			}
+		]
+	}
+}

@@ -1,0 +1,27 @@
+.like_seccion1{
+    padding-left: 75px;
+    display: flex;
+    
+}
+
+.card_seccion1{
+    padding-left: 70%;
+    position: absolute;
+    display: flex;
+    
+}
+
+.body__heart_selected{
+    position: absolute;
+    font-size: 23px;
+    top: 10px;
+    border-color: black;
+    border-width: 5px;
+    color:#F0572D;
+
+    &:hover {
+        border-color: black;
+        transform: scale(1.50);
+       
+    }
+}

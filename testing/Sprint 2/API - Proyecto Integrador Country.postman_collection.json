@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "da5c2d92-6178-4fcf-9a59-cef104db42c6",
+		"name": "API - Proyecto Integrador Country",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18077912"
+	},
+	"item": [
+		{
+			"name": "Save country",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"Argentina\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/countries",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"countries"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all countries",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/countries/",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"countries",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save All countries",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"name\": \"Uruguay\"\n    },\n    {\n        \"name\": \"Colombia\"\n    },\n    {\n\n        \"name\": \"Argentina\"\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/countries/saveAll",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"countries",
+						"saveAll"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,233 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+header, body, footer {
+  width: 100%;
+}
+
+header {
+  background: white;
+  position: sticky;
+  z-index: 999;
+  top: 0;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+}
+
+.header__logo {
+  padding-inline-start: 40px;
+  padding-inline-end: 40px;
+  padding-block-start: 15px;
+  padding-block-end: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.header__button {
+  color: #F0572D;
+  border-color: #F0572D;
+  border-radius: 5px;
+  background: transparent;
+  border: 1px solid #F0572D;
+  padding: 6px 55px 6px 55px;
+  margin-left: 10px;
+}
+
+.header__search {
+  padding-block-start: 22px;
+  padding-block-end: 26px;
+  background-color: #31363F;
+  color: white;
+  text-align: center;
+}
+
+.header__btn {
+  color: white;
+  background: #F0572D;
+  border-radius: 5px;
+  border-color: #F0572D;
+  border: 1px solid #F0572D;
+  padding: 6px 55px 6px 55px;
+  text-align: center;
+}
+
+.header__input {
+  outline: none;
+  border: 1px solid #31363F;
+  padding: 6px 140px 6px 6px;
+  border-radius: 5px;
+  margin-block-start: 23px;
+  margin-inline-end: 10px;
+}
+
+.header__burguer {
+  display: none;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .header__input {
+    padding: 6px 20px 6px 6px;
+    font-size: 20px;
+  }
+  .header__button {
+    padding: 6px 20px 6px 20px;
+    font-size: 20px;
+  }
+  .header__btn {
+    padding: 6px 20px 6px 20px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header__logo {
+    padding: 20px;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+  }
+  .header__search {
+    font-size: small;
+    text-align: center;
+  }
+  .header__Form {
+    display: flex;
+    flex-direction: column;
+  }
+  .header__input,
+  .header__btn {
+    padding: 10px 10px 10px 10px;
+    margin: 5px 8px 5px 8px;
+    font-size: 16px;
+  }
+  .header__burguer {
+    display: block;
+  }
+  .hide {
+    display: none;
+  }
+  .header__buttons {
+    flex-flow: column;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 300px;
+    padding-top: 200px;
+  }
+  .header__button {
+    color: #191B1D;
+    border-color: #F0572D;
+    border-radius: 5px;
+    background: transparent;
+    border: 1px solid white;
+    margin-left: 10px;
+  }
+}
+
+.body__category {
+  margin: auto;
+  padding: 20px;
+}
+
+.body__recommendation {
+  background-color: #DFE4EA;
+  margin: auto;
+  padding: 20px;
+}
+
+.body__section {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+}
+
+.body__card {
+  border: 1px solid #DFE4EA;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  margin: 10px;
+}
+
+.body__img {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  width: 100%;
+}
+
+.body__card > h4 {
+  padding-inline-start: 11px;
+  padding-block-start: 10px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #191B1D;
+}
+
+.body__card > p {
+  padding-inline-start: 10px;
+  opacity: 0.6;
+  font-size: 14px;
+  padding-block-end: 6px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+  .body__section {
+    flex-wrap: wrap;
+  }
+  .body__card {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .body__section {
+    flex-direction: column;
+    padding-block-end: 20px;
+    margin: auto;
+  }
+  .body__card {
+    width: 100%;
+    margin: 5px;
+  }
+}
+
+footer {
+  position: sticky;
+  bottom: 0;
+  box-shadow: 6px 0px 0px 0px rgba(0, 0, 0, 0.5);
+  background-color: #F0572D;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block-start: 20px;
+  padding-block-end: 20px;
+}
+
+footer > h4 {
+  color: whitesmoke;
+  padding-inline-start: 30px;
+}
+
+.footer__icons {
+  color: white;
+  padding-inline-end: 20px;
+}
+
+.footer__icon {
+  font-size: 28px;
+  padding-inline-end: 30px;
+  color: white;
+}
+
+@media screen and (max-width: 480px) {
+  .footer__icon {
+    display: none;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

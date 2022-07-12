@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "f50a6a6f-f588-4653-8287-0ddac99d504f",
+		"name": "API - Proyecto Integrador Politics",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18077912"
+	},
+	"item": [
+		{
+			"name": "Save new Politic",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"politic 1\",\n    \"description\": \"bbla bla bla\",\n    \"type\": \"house_rules_policy\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/politics",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"politics"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all politics",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/politics",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"politics"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update politic",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n    \n        \"title\": \"Check out\",\n        \"description\": \"Check out a las 14:00\",\n        \"type\": \"checkout_policy\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/politics/1",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"politics",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save all Politics",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"id\": 1,\n        \"title\": \"Check out\",\n        \"description\": \"Check out a las 14:00\",\n        \"type\": \"checkout_policy\"\n    },\n    {\n        \"id\": 2,\n        \"title\": \"Check in\",\n        \"description\": \"Check in es partir de las 16:00 hs\",\n        \"type\": \"checkin_policy\"\n    },\n    {\n        \"id\": 3,\n        \"title\": \"Cancellation_policy\",\n        \"description\": \"Las politicas de cancelacion y pago dependen del tipo de alojamiento, porfavor comunicarse con gerencia\",\n        \"type\": \"cancellation_policy\"\n    },\n    {\n        \"id\": 4,\n        \"title\": \"Pets_policy\",\n        \"description\": \"Se permiten mascotas con pesos menores a 50kg y raza considerada no peligrosa\",\n        \"type\": \"pets_policy\"\n    },\n    {\n        \"id\": 5,\n        \"title\": \"Payment_policy\",\n        \"description\": \"Los pagos permitidos son los autorizados en el pais de alojamiento\",\n        \"type\": \"payment_policy\"\n    },\n    {\n        \"id\": 6,\n        \"title\": \"House_rules_policy\",\n        \"description\": \"Las normas de la casa son anunciadas por el alojamiento elegida y deben respetarse\",\n        \"type\": \"house_rules_policy\"\n    },\n    {\n        \"id\": 7,\n        \"title\": \"Check out\",\n        \"description\": \"Check out a las 14:00\",\n        \"type\": \"checkout_policy\"\n    },\n    {\n        \"id\": 8,\n        \"title\": \"Check In\",\n        \"description\": \"Checkin hasta las 9:00\",\n        \"type\": \"checkin_policy\"\n    },\n    {\n        \"id\": 9,\n        \"title\": \"Cancellation_policy\",\n        \"description\": \"Las politicas de cancelacion y pago dependen del tipo de alojamiento, porfavor comunicarse con gerencia\",\n        \"type\": \"cancellation_policy\"\n    },\n    {\n        \"id\": 10,\n        \"title\": \"Pets_policy\",\n        \"description\": \"Se permiten mascotas con pesos menores a 50kg y raza considerada no peligrosa\",\n        \"type\": \"pets_policy\"\n    },\n    {\n        \"id\": 11,\n        \"title\": \"House Rules Policy\",\n        \"description\": \"Las normas de la casa son anunciadas por el alojamiento elegida y deben respetarse\",\n        \"type\": \"house_rules_policy\"\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/politics/saveAll",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"politics",
+						"saveAll"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

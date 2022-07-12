@@ -1,0 +1,275 @@
+.product_seccion1{
+    background-color: rgba(49, 54, 63, 1);
+    color: rgba(223, 228, 234, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 49px;
+    padding-left: 43px;
+    height: 60px;
+}
+
+.product_arrow{
+    margin-left: 20px;
+}
+
+
+.product_seccion2{
+    background-color: rgba(223, 228, 234, 1);
+    color: rgba(49, 54, 63, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 49px;
+    padding-left: 43px;
+    height: 55px;
+}
+
+
+
+.product_seccion3{
+    height: 40px;
+    float: left;
+    width: 80px;
+}
+
+.product_seccion4{
+    float: left;
+    width: 28px;
+    height: 40px;
+    margin-left: 80px;
+    position: absolute;
+    
+}
+
+.product_seccion{
+    height: 40px;
+    display: flex;
+    padding-right: 2%;
+}
+
+.product_icon_heart{
+    width: 28px;
+    height: 28px;
+    margin-left: 10px;
+}
+
+.product_location{
+    font-size: medium;
+}
+
+.product_location_icon{
+    padding-right: 6px;
+}
+
+.product_location_number{
+    display: flex;
+    align-items: center;
+}
+
+.product_location_qualification{
+    color: rgba(49, 54, 63, 1);
+    font-size: 14px;
+}
+
+.product_location_description{
+    padding-left: 43px;
+    color: rgba(49, 54, 63, 1);
+    padding-bottom: 10px;
+}
+
+.product_caracteristicas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.product_div_icono_descripcion{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.product__icon{
+    color: #F0572D;
+}
+
+.product_separador{
+    border: 1px solid #F0572D;
+}
+
+.product_description{
+    font-size: 16px;
+    padding-top: 20px;
+    padding-left: 10px;
+    font-weight: 600;
+    margin-right: 40px;
+}
+
+.product_politicas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-right: 70px;
+    padding-left: 10px;
+}
+
+.product_boton_container_reserva{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    width: 350px;
+    height: 100px;
+    margin-right: 10%;
+    text-align: justify;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(68, 68, 68, 0.5);
+}
+
+.product_container_calendar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product_btn_reserva{
+    background-color: #F0572D;
+    border: none;
+    padding: 5px 20px;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    box-shadow: 0px 0px 5px rgba(68, 68, 68, 0.5);
+    border-radius: 5px;
+    width: 100%;
+}
+
+.product_btn_reserva:hover{
+    color:#F0572D;
+    background-color: white;
+    transition: .3s ease all;
+    border: 0.25px solid #F0572D;
+}
+
+.product_btn_reserva:hover{
+    color: rgba(49, 54, 63, 1);
+    background-color: white;
+}
+
+.product_div_container_stars{
+    display: flex;
+}
+
+.product_paddingtop{
+    padding-top: 30px;
+}
+
+.product_h4_paddingleft{
+    padding-left: 5px;
+}
+
+.product_container_fechas{
+    background-color: #dfe4ea;
+    padding-bottom: 10px;
+}
+
+.product_fechas{
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.product_h4_politicas{
+    color: #F0572D;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.product_p_politicas{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.product_div_politicas_container{
+    padding-right: 70px;
+}
+
+.product_div_calendar_container{
+    padding-bottom: 10px;
+    padding-right: 27px;
+}
+
+
+@media (max-width :1700px){
+
+    .product_section_calendar_container{
+        margin-left: -30px;
+    }
+
+}
+
+@media (max-width :768px){  
+    
+    .product_politicas{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .product_caracteristicas{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .product_container_calendar{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .product_boton_container_reserva{
+        width: 100%;
+        height: 80px;
+        text-align: center;
+        margin-left: 50px;
+        margin-right: 80px;
+    }
+
+    .product_section_calendar_container{
+        margin-left: -10px;
+    }
+
+}
+
+@media screen and (max-width :480px){
+
+    .product_seccion1{
+        height: 80px;
+    }
+
+    .product_seccion2{
+        height: 70px;
+    }
+    
+    .product_politicas{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .product_caracteristicas{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .product_boton_container_reserva{
+        height: 100px;
+        text-align: justify;
+    }
+
+    .product_seccion2{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .product_section_calendar_container{
+        margin-left: -5px;
+    }
+    
+}
