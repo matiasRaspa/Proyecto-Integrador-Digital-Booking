@@ -30,8 +30,8 @@ public class AWSS3Service {
 
     static {
         credentials = new BasicAWSCredentials(
-                "AKIASDYGBXDRVW5ARYAU",
-                "BCZKViqpPogP4Ygz+SwTPym5JM3itTcOBRoRzgOk"
+                "",
+                ""
         );
     }
 
